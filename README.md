@@ -25,15 +25,19 @@ Specify the project name and  path  you want to create it
 	    --name PROJECT_NAME, 
 		-n PROJECT_NAME  	  Name of the Project 
 	    --path PATH, -p PATH  Path to project template to be created
-Example :
+**Example :**
    
     $mtrxtmp --name PROJECT_NAME --path "/PATH/TO/CREATE/PROJECT"
    Running the program without an argument creates a project template with default name('matrix-pypi-template')  in current working directory 
 
 The use of this package ends here.Now if your want to publish your package to pypi, follow the below steps:
 Requirements : 
+**Python Packages:**
 
 	setuptools wheel twine
+**External Requirements :**
+Accounts in [PyPi](https://pypi.org/) and [Test PyPI](https://test.pypi.org/)
+
 Once the Project Template is adjusted to suit your project what needs to be done next is building your python package, It can be done by entering the following command in your project root directory :
 
 	$python setup.py sdist bdist_wheel
